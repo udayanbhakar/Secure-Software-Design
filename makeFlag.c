@@ -14,10 +14,10 @@ int main(void)
 
     char flag[length];
 
-    // Now I want to store all the elements from numbers that are > 10 into arr.
+    // Now I want to store all the elements from numbers that are > 10 into flag.
 
-    // I also want to create a variable that will keep track of the indexes of arr.
-    //  I will set it to 0 so that it can start storing values in arr from the 0 index.
+    // I also want to create a variable that will keep track of the indexes of flag.
+    //  I will set it to 0 so that it can start storing values in char from the 0 index.
     int arrIndex = 0;
 
     // So, I use a loop and an if statement to loop through each index of numbers
@@ -30,10 +30,15 @@ int main(void)
             arrIndex++;
         }
     }
-
+    // Here, I finally declare the null character at the last index of flag to indicate the end of this string
     flag[arrIndex] = '\0';
-
+    
+    //Now I print out flag as a string
     printf("%s \n", flag);
 
     return 0;
 }
+
+// This is the output
+// PS C:\Users\udaya> .\makeFlag
+// ninja{du5t_0ff_y0ur_C}
